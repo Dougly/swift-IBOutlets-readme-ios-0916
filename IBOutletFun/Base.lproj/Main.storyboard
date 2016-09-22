@@ -22,23 +22,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8al-56-yem">
-                                <frame key="frameInset" minX="160" minY="247" width="54" height="30"/>
+                                <frame key="frameInset" minX="158" minY="247" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Unicron"/>
+                                <state key="normal" title="Unicron!"/>
+                                <connections>
+                                    <action selector="unicorn:" destination="Xi6-xu-lir" eventType="touchUpInside" id="rej-RB-qDn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NS4-we-a80">
                                 <frame key="frameInset" minX="134" minY="190" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Goodbye World"/>
+                                <connections>
+                                    <action selector="goodbyeWorld:" destination="Xi6-xu-lir" eventType="touchUpInside" id="TtU-sK-Yd0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UR2-jr-T1M">
                                 <frame key="frameInset" minX="147" minY="133" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hello World"/>
+                                <connections>
+                                    <action selector="helloWorld:" destination="Xi6-xu-lir" eventType="touchUpInside" id="pK1-c2-zrj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textDisplay" destination="mWy-cu-2fo" id="NXP-16-uye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJX-1q-nY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
